@@ -34,8 +34,4 @@
   </div>
 </mat-card>
 
-<h2>本の登録データ一覧</h2>
-<mat-card class="test" *ngFor="let book of bookList">
-  <mat-card-title>{{ book.name }}</mat-card-title>
-  <mat-card-content>{{ book.detail }}</mat-card-content>
-</mat-card>
+<app-card [bookShow]="bookList"></app-card>

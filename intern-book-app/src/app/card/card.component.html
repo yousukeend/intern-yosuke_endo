@@ -1,0 +1,5 @@
+<h2>本の登録データ一覧</h2>
+<mat-card class="test" *ngFor="let book of bookShow">
+  <mat-card-title>{{ book.name }}</mat-card-title>
+  <mat-card-subtitle>{{ book.detail }}</mat-card-subtitle>
+</mat-card>
