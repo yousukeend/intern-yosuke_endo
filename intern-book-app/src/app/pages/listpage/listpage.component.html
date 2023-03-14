@@ -19,28 +19,14 @@
     <button mat-flat-button color="primary">追加</button>
   </mat-card-actions>
 </mat-card>
-<mat-card class="base-card">
-  <mat-card-title>呪術廻戦</mat-card-title>
+<mat-card class="base-card" *ngFor="let book of bookList">
+  <mat-card-title>{{ book.name }}</mat-card-title>
   <mat-card-content>
     <p>
-      呪い。辛酸・後悔・恥辱...。人間の負の感情から生まれる。禍々しさその力は、人を死へと導く。ある強力な「呪物」の封印が解かれたことで、高校生の虎杖は、呪いを廻る戦いの世界へと入っていく...。
+      {{ book.detail }}
     </p>
     <p>
-      評価点：10
-    </p>
-  </mat-card-content>
-  <mat-card-actions align="end">
-    <button mat-flat-button color="warn">削除</button>
-  </mat-card-actions>
-</mat-card>
-<mat-card class="base-card">
-  <mat-card-title>ワンピース</mat-card-title>
-  <mat-card-content>
-    <p>
-      世は大海賊時代。歴史上でただ一人"偉大なる航路(グランドライン)"を制覇した、”海賊王”ゴール・D・ロジャー。富、名声、力の全てを手に入れたという彼はが、処刑直前に放った一言が、世界を揺るがせた。
-    </p>
-    <p>
-      評価点：9
+      評価点: {{ book.evaluation }} 点
     </p>
   </mat-card-content>
   <mat-card-actions align="end">
