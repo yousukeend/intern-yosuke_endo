@@ -1,0 +1,19 @@
+.base-card {
+  margin: 30px 30px;
+  padding: 20px 20px;
+}
+
+.book-detail {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.evaluation {
+  min-width: 75px;
+  max-width: 425px;
+  width: 100%;
+}
+
+button {
+  width: 60px;
+}
