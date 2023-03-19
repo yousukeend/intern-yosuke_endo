@@ -1,9 +1,9 @@
-<mat-card class="test">
+<mat-card class="base-card">
   <mat-card-title>書籍登録</mat-card-title>
   <form class="book-form">
     <mat-form-field class="book-detail">
       <mat-label>書籍名</mat-label>
-      <input matInput value="">
+      <input matInput>
     </mat-form-field>
 
     <mat-form-field class="book-detail">
@@ -12,26 +12,11 @@
     </mat-form-field>
   </form>
   <mat-form-field class="evaluation">
-    <mat-label>評価点</mat-label>
-    <input matInput value="">
+    <mat-label type="number">評価点</mat-label>
+    <input matInput>
   </mat-form-field>
-  <div>
+  <mat-card-actions align="end">
     <button mat-flat-button color="primary">追加</button>
-  </div>
+  </mat-card-actions>
 </mat-card>
-<mat-card class="test">
-  <mat-card-title>テスト本</mat-card-title>
-  <p>テスト</p>
-  <div>
-    <button mat-flat-button color="warn">削除</button>
-  </div>
-</mat-card>
-<mat-card class="test">
-  <mat-card-title>テスト２本</mat-card-title>
-  <p>テスト2</p>
-  <div>
-    <button mat-flat-button color="warn">削除</button>
-  </div>
-</mat-card>
-
 <app-card [bookShow]="bookList"></app-card>

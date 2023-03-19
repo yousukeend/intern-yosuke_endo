@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { ListpageComponent } from './pages/listpage/listpage.component';
-import { CardComponent } from './card/card.component';
+import { CardComponent } from './components/card/card.component';
 //Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';

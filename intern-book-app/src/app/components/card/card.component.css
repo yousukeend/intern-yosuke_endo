@@ -1,0 +1,8 @@
+.base-card {
+  margin: 30px 30px;
+  padding: 20px 20px;
+}
+
+.mat-mdc-card-content {
+  padding: 0;
+}
