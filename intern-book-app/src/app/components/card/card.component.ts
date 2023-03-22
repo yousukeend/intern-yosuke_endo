@@ -9,7 +9,7 @@ import { Book } from '../../types/ book';
 export class CardComponent {
   // メモ：
   // @Input() bookShow?:
-  @Input() bookInfo: Book = {
+  @Input() book: Book = {
     name:"",
     detail:"",
     evaluation: 0
