@@ -7,7 +7,11 @@ import { Book } from '../../types/ book';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  @Input() bookShow: Book[] = [
-    {name: '', detail: '', evaluation: 0}
-  ];
+  // メモ：
+  // @Input() bookShow?:
+  @Input() bookInfo: Book = {
+    name:"",
+    detail:"",
+    evaluation: 0
+  }
 }
