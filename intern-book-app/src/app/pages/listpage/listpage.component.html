@@ -1,23 +1,25 @@
 <mat-card class="base-card">
   <mat-card-title>書籍登録</mat-card-title>
-  <form class="book-form">
+  <!-- <form class="book-form"> -->
     <mat-form-field class="book-detail">
       <mat-label>書籍名</mat-label>
-      <input matInput>
+      <input matInput [(ngModel)]="addToBookList.name">
     </mat-form-field>
 
     <mat-form-field class="book-detail">
       <mat-label>あらすじ</mat-label>
-      <textarea matInput placeholder="あらすじ..."></textarea>
+      <textarea matInput [(ngModel)]="addToBookList.detail" placeholder="あらすじ..."></textarea>
     </mat-form-field>
-  </form>
-  <mat-form-field class="evaluation">
-    <mat-label type="number">評価点</mat-label>
-    <input matInput>
-  </mat-form-field>
-  <mat-card-actions align="end">
-    <button mat-flat-button color="primary">追加</button>
-  </mat-card-actions>
+
+    <mat-form-field class="evaluation">
+      <mat-label type="number">評価点</mat-label>
+      <input type="text" pattern="^[0-9]+$" value="null" matInput [(ngModel)]="addToBookList.evaluation">
+    </mat-form-field>
+
+    <mat-card-actions align="end">
+      <button mat-flat-button color="primary" (click)="saveToBookList()">追加</button>
+    </mat-card-actions>
+  <!-- </form> -->
 </mat-card>
 
 <ng-container *ngFor="let book of bookList">

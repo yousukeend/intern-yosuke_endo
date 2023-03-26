@@ -7,11 +7,10 @@ import { Book } from '../../types/ book';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  // メモ：
-  // @Input() bookShow?:
+  //変数名をbookShowからbookに変更
   @Input() book: Book = {
-    name:"",
-    detail:"",
+    name: '',
+    detail: '',
     evaluation: 0
   }
 }
