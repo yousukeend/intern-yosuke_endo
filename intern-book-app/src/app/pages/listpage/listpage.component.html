@@ -31,6 +31,14 @@
   </mat-card-actions>
 </mat-card>
 
-<ng-container *ngFor="let book of bookList; index as i">
-  <app-card [book]="book" (onDelete)="deleteFromBookList(i)"></app-card>
-</ng-container>
+<div *ngIf="bookList.length > 0; then trueBookCard; else falseBookCard"></div>
+<ng-template #trueBookCard>
+  <app-card
+    *ngFor="let book of bookList; index as i"
+    [book]="book"
+    (onDelete)="deleteFromBookList(i)"
+  ></app-card>
+</ng-template>
+<ng-template #falseBookCard>
+  <div class="notFoundBook">データがありません</div>
+</ng-template>
